@@ -1,0 +1,220 @@
+.header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1400;
+	height: 4.4rem;
+	background-color: rgba(255, 255, 255, 0.3);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+
+	hr {
+		border: 1px solid var(--green-third);
+		opacity: 0.7;
+	}
+
+	.container {
+		max-width: 98rem;
+		width: 90%;
+		margin: 0 auto;
+		padding: 0 2.2rem;
+
+		.nav {
+			a {
+				display: block;
+				text-decoration: none;
+			}
+
+			.nav_link_natureza {
+				width: 5rem;
+				height: 4.4rem;
+				background: url('../../../public/natureza_logo.png') center no-repeat;
+				background-size: 100px 65px;
+			}
+
+			.nav_link_bag {
+				filter: brightness(50%);
+				width: 5rem;
+				height: 4.4rem;
+				background: url('../../../public/eco_bag.png') center no-repeat;
+				background-size: 40px 30px;
+			}
+
+			.nav_list {
+				list-style: none;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 0 -1rem;
+
+				.nav_item {
+					.nav_link {
+						font-size: 1rem;
+						color: var(--black);
+						padding: 0 1rem;
+						transition: opactiy 0.5s;
+					}
+
+					.nav_link:hover {
+						filter: brightness(5%) drop-shadow(0px 3px 3px var(--green-third));
+					}
+				}
+			}
+
+			.nav_list_mobile {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		height: 4.8rem;
+		transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
+			height 0.56s cubic-bezier(0.32, 0.08, 0.24, 1);
+
+		&.active {
+			height: 100%;
+		}
+
+		.container {
+			padding: 0;
+
+			.nav {
+				position: relative;
+
+				.nav_link_natureza {
+					position: relative;
+				}
+
+				.nav-list {
+					margin: 0;
+				}
+
+				.nav_list_mobile {
+					display: flex;
+
+					.nav_item {
+						width: 4.8rem;
+						height: 4.8rem;
+						display: flex;
+
+						.nav_link_bag {
+							transition: opacity 3s;
+
+							&.active {
+								opacity: 0;
+								transition: opacity 0.3s;
+							}
+						}
+
+						.mobile_menu {
+							position: relative;
+							z-index: 1500;
+							width: 100%;
+							height: 100%;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							cursor: pointer;
+
+							.line {
+								position: absolute;
+								width: 1.7rem;
+								height: 1px;
+								background-color: var(--black);
+								transition: margin-top 0.3192s
+									cubic-bezier(0.04, 0.04, 0.12, 0.96);
+							}
+
+							.line_top {
+								margin-top: 10px;
+
+								&.active {
+									margin-top: 0;
+									background-color: var(--black);
+									transform: rotate(45deg);
+									transition: transform 0.3192s 0.1s
+										cubic-bezier(0.04, 0.04, 0.12, 0.96);
+								}
+							}
+
+							.line_bottom {
+								margin-top: -0.4rem;
+
+								&.active {
+									margin-top: 0;
+									background-color: var(--black);
+									transform: rotate(-45deg);
+									transition: transform 0.3192s 0.1s
+										cubic-bezier(0.04, 0.04, 0.12, 0.96);
+								}
+							}
+						}
+
+						.nav_link {
+							font-size: 1.7rem;
+							padding: 0;
+							margin: auto 0;
+						}
+					}
+				}
+
+				.nav_list_larger {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 0;
+					height: 0;
+					display: block;
+					padding: 4.4rem 3rem;
+					z-index: 1000;
+					box-sizing: border-box;
+					opacity: 0;
+					visibility: hidden;
+					transition: opacity 0.3s;
+
+					&.active {
+						width: 100%;
+						height: 100vh;
+						opacity: 1;
+						animation: fadeIn 1s ease-in;
+						visibility: visible;
+					}
+
+					.nav_item_hidden {
+						display: none;
+					}
+
+					.nav_item {
+						padding-top: 2rem;
+						padding-bottom: 1rem;
+						width: 100%;
+						justify-content: flex-start;
+						border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+
+						&.active {
+							animation: fadeIn 1s ease-in;
+						}
+
+						.nav_link {
+							color: var(--white);
+						}
+					}
+
+					@keyframes fadeIn {
+						from {
+							opacity: 0;
+						}
+
+						to {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}

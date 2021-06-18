@@ -1,0 +1,177 @@
+.container {
+	max-width: 98rem;
+	margin: 0 auto;
+
+	.hero {
+		height: 69.2rem;
+		margin-top: 4.4rem;
+		background-size: auto 73.6rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-top: 0.6rem solid var(--white);
+		border-bottom: 0.6rem solid var(--white);
+
+		.title {
+			text-align: center;
+			padding-top: 5.5rem;
+
+			.title_heading {
+				font-size: 5rem;
+				line-height: 1.07143;
+				letter-spacing: 0.005rem;
+			}
+
+			.title_sub_heading {
+				color: var(--white);
+				font-size: 2.5rem;
+				margin-top: 0.6rem;
+				letter-spacing: 0.008rem;
+				font-weight: 400;
+			}
+
+			.title_price {
+				color: var(--grey);
+				font-size: 1.7rem;
+				margin-top: 0.68rem;
+			}
+		}
+
+		.cta {
+			text-align: center;
+			margin-top: 1.8rem;
+
+			a {
+				text-decoration: none;
+			}
+
+			a:hover {
+				filter: brightness(5%) invert(1)
+					drop-shadow(1px 4px 4px var(--green-third));
+			}
+
+			.cta_link {
+				color: var(--green-third);
+				opacity: 0.9;
+				font-size: 1.5rem;
+				display: inline-block;
+			}
+
+			.cta_link:nth-child(2) {
+				margin-left: 2.6rem;
+			}
+		}
+	}
+
+	.tnatu {
+		background-color: var(--black);
+		border-top: none;
+		.title {
+			.title_heading {
+				filter: brightness(5%) invert(1)
+					drop-shadow(1px 4px 4px var(--green-third));
+				opacity: 0.9;
+			}
+		}
+	}
+
+	.enatu {
+		.title {
+			.title_heading {
+				filter: brightness(5%) drop-shadow(1px 4px 4px var(--green-third));
+				opacity: 0.9;
+			}
+
+			.title_dark {
+				color: var(--black);
+			}
+		}
+
+		.cta {
+			a:hover {
+				text-decoration: underline;
+				filter: none;
+			}
+		}
+	}
+
+	.natureza {
+		background-color: var(--black);
+		.title {
+			.title_heading {
+				color: var(--white);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1068px) {
+	// TODO: You should change all images formats to mobile
+
+	.container {
+		.hero {
+			height: 65rem;
+			background-size: auto 69.8rem;
+			background-position: bottom center;
+			background-repeat: no-repeat;
+
+			.title {
+				.title_heading {
+					font-size: 4.4rem;
+				}
+
+				.title_sub_heading {
+					font-size: 2rem;
+				}
+
+				.title_price {
+					font-size: 1.5rem;
+				}
+			}
+
+			.cta {
+				.cta_link:nth-child(2) {
+					margin-left: 2rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 735px) {
+	// TODO: You should change all images formats to mobile
+
+	.container {
+		.hero {
+			height: 50rem;
+			background-size: auto 54.8rem;
+			background-position: bottom center;
+			background-repeat: no-repeat;
+
+			.title {
+				.title_heading {
+					font-size: 3.7rem;
+				}
+
+				.title_sub_heading {
+					font-size: 1.9rem;
+				}
+
+				.title_price {
+					font-size: 1.5rem;
+				}
+			}
+
+			.cta {
+                margin-top: 0.7rem;
+
+				.cta_link {
+					font-size: 1rem;
+				}
+			}
+		}
+
+		.tnatu {
+			margin-top: 4.8rem;
+		}
+	}
+}

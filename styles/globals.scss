@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	// https://colorhunt.co/palette/202087
+	--white: #ffffff;
+	--brown: #7e6552;
+	--green-first: #273723;
+	--green-second: #30694b;
+	--green-third: #1eae98;
+	--grey: #7e7474;
+	--black: #000000;
+	--black-two: #414141;
+}
+
+body {
+	background: var(--white);
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--green-third);
+	border-radius: 6px;
+	border: 3px solid var(--green-first);
+	opacity: 0.7;
+}
+
+body,
+input,
+textarea,
+button {
+	font-family: 250 1rem 'Work Sans', sans-serif;
+	color: var(--black-two);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	font: 500 1rem Inter, sans-serif;
+	color: var(--black);
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+button {
+	cursor: pointer;
+}
+
+::selection {
+	background: rgba(110, 201, 68, 0.5); /* WebKit/Blink Browsers */
+	filter: brightness(50%);
+}
