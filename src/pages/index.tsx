@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import styles from './home.module.scss';
 
 export default function Home() {
@@ -13,12 +15,16 @@ export default function Home() {
 						<p className={styles.title_price}></p>
 					</div>
 					<div className={styles.cta}>
-						<a href='' className={styles.cta_link}>
-							Saiba mais
-						</a>
-						<a href='' className={styles.cta_link}>
-							Comprar
-						</a>
+						<Link href='/products/tnatu'>
+							<a href='' className={styles.cta_link}>
+								Saiba mais
+							</a>
+						</Link>
+						<Link href='/shop/tnatu'>
+							<a href='' className={styles.cta_link}>
+								Comprar
+							</a>
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -38,18 +44,22 @@ export default function Home() {
 						</p>
 					</div>
 					<div className={styles.cta}>
-						<a
-							href=''
-							className={[styles.cta_link, styles.cta_link_darker].join(' ')}
-						>
-							Saiba mais
-						</a>
-						<a
-							href=''
-							className={[styles.cta_link, styles.cta_link_darker].join(' ')}
-						>
-							Comprar
-						</a>
+						<Link href='/products/enatu'>
+							<a
+								href=''
+								className={[styles.cta_link, styles.cta_link_darker].join(' ')}
+							>
+								Saiba mais
+							</a>
+						</Link>
+						<Link href='/shop/enatu'>
+							<a
+								href=''
+								className={[styles.cta_link, styles.cta_link_darker].join(' ')}
+							>
+								Comprar
+							</a>
+						</Link>
 					</div>
 				</div>
 			</section>

@@ -37,7 +37,7 @@ export function Header() {
 						</li>
 						<li className={styles.nav_item}>
 							<a
-								href=''
+								href='/'
 								className={[styles.nav_link, styles.nav_link_natureza].join(
 									' '
 								)}
@@ -64,7 +64,7 @@ export function Header() {
 					>
 						<li className={[styles.nav_item, styles.nav_item_hidden].join(' ')}>
 							<a
-								href=''
+								href='/'
 								className={[styles.nav_link, styles.nav_link_natureza].join(
 									' '
 								)}

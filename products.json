@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "T[natu]",
+        "content": "Essa linha de vaso inteligente é capaz de realizar todo o monitoramento necessário para uma excelente qualidade de vida da plantinha. O vaso é conectado ao WI-FI e avisa o usuário via WhatsApp sobre tudo que ele deverá fazer. ",
+        "meta_description": "Linha de vaso inteligente para facilitar a vida das mães e pais de planta. ",
+        "meta_titlte": "Vaso de planta inteligente ",
+        "price": 250,
+        "slug": "t-natu",
+        "published_at": "2021-06-18T21:37:20.857Z",
+        "created_at": "2021-06-18T21:36:53.369Z",
+        "updated_at": "2021-06-18T21:41:47.295Z",
+        "image": {
+            "id": 1,
+            "name": "T[natu].png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 201,
+            "height": 244,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_T[natu].png",
+                    "hash": "thumbnail_T_natu_534f6ba199",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 129,
+                    "height": 156,
+                    "size": 38.18,
+                    "path": null,
+                    "url": "/uploads/thumbnail_T_natu_534f6ba199.png"
+                }
+            },
+            "hash": "T_natu_534f6ba199",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 49.1,
+            "url": "/uploads/T_natu_534f6ba199.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-06-18T21:32:28.431Z",
+            "updated_at": "2021-06-18T21:32:28.460Z"
+        }
+    }, {
+        "id": 2,
+        "name": "E[natu]",
+        "content": "Essa linha de vaso inteligente minimalista a qual tem como objetivo ajudar a mãe e o pai de planta a prover uma excelente qualidade de vida da plantinha. O vaso possui um sistema de irrigação inteligente e avisa a mãe e o pai da plantinha quando a água está acabando. ",
+        "meta_description": "Linha de vaso inteligente minimalista que facilita a vida das mães e pais de planta. ",
+        "meta_titlte": "Vaso de planta minimalista e inteligente",
+        "price": 125,
+        "slug": "e-natu",
+        "published_at": "2021-06-18T21:41:36.496Z",
+        "created_at": "2021-06-18T21:40:59.151Z",
+        "updated_at": "2021-06-18T21:41:36.516Z",
+        "image": {
+            "id": 2,
+            "name": "E[natu].jpeg",
+            "alternativeText": "",
+            "caption": "",
+            "width": 419,
+            "height": 568,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_E[natu].jpeg",
+                    "hash": "thumbnail_E_natu_042f651b05",
+                    "ext": ".jpeg",
+                    "mime": "image/jpeg",
+                    "width": 115,
+                    "height": 156,
+                    "size": 4.31,
+                    "path": null,
+                    "url": "/uploads/thumbnail_E_natu_042f651b05.jpeg"
+                },
+                "small": {
+                    "name": "small_E[natu].jpeg",
+                    "hash": "small_E_natu_042f651b05",
+                    "ext": ".jpeg",
+                    "mime": "image/jpeg",
+                    "width": 369,
+                    "height": 500,
+                    "size": 21.77,
+                    "path": null,
+                    "url": "/uploads/small_E_natu_042f651b05.jpeg"
+                }
+            },
+            "hash": "E_natu_042f651b05",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "size": 25.32,
+            "url": "/uploads/E_natu_042f651b05.jpeg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-06-18T21:38:32.093Z",
+            "updated_at": "2021-06-18T21:38:32.105Z"
+        }
+    }
+]

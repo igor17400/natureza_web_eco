@@ -193,14 +193,14 @@
 						padding-bottom: 1rem;
 						width: 100%;
 						justify-content: flex-start;
-						border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+						border-bottom: 2px solid rgba(30, 174, 152, 0.3);
 
 						&.active {
 							animation: fadeIn 1s ease-in;
 						}
 
 						.nav_link {
-							color: var(--white);
+							color: var(--green-third);
 						}
 					}
 
