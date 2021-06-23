@@ -1,4 +1,5 @@
 import '../../styles/globals.scss';
+import { Footer } from '../components/Footer';
 
 import { Header } from '../components/Header';
 
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
 			<main>
 				<Header />
 				<Component {...pageProps} />
+				<Footer />
 			</main>
 		</div>
 	);

@@ -1,0 +1,133 @@
+.footer {
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--white);
+
+	.content {
+		max-width: 1350px;
+		margin: auto;
+		padding: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		p,
+		a {
+			color: var(--black);
+			text-decoration: none;
+		}
+
+		.box {
+			width: 33%;
+			transition: all 0.4s ease;
+		}
+
+		.topic {
+			font-size: 25px;
+			font-weight: bold;
+			color: var(--black);
+			margin-bottom: 16px;
+			padding-bottom: 1.1rem;
+		}
+
+		.upper {
+			.text_descr {
+				font-size: 1.1rem;
+			}
+		}
+
+		.lower {
+			.topic {
+				margin: 24px 0 5px 0;
+			}
+
+			.phone,
+			.email {
+				padding-top: 0.5rem;
+			}
+
+			i {
+				padding-right: 16px;
+			}
+		}
+
+		.middle {
+			a {
+				line-height: 32px;
+			}
+		}
+
+		.right {
+			input[type='text'] {
+				height: 45px;
+				width: 100%;
+				outline: none;
+				color: var(--black);
+				background: var(--white);
+				border-radius: 5px;
+				padding-left: 10px;
+				font-size: 17px;
+				border: 2px solid var(--grey);
+			}
+
+			input[type='submit'] {
+				height: 42px;
+				width: 100%;
+				font-size: 18px;
+				color: var(--black);
+				background: var(--green-third);
+				outline: none;
+				border-radius: 5px;
+				letter-spacing: 1px;
+				cursor: pointer;
+				margin-top: 12px;
+				border: 2px solid var(--black);
+				transition: all 0.3s ease-in-out;
+			}
+
+			input[type='submit']:hover {
+				background: var(--white);
+				color: var(--green-third);
+			}
+		}
+
+		.media_icons {
+			a {
+				font-size: 16px;
+				height: 45px;
+				width: 45px;
+				display: inline-block;
+				text-align: center;
+				line-height: 43px;
+				border-radius: 5px;
+				border: 2px solid var(--grey);
+				margin: 30px 5px 0 0;
+				transition: all 0.3s ease;
+			}
+
+			a:hover {
+				border-color: var(--green-third);
+			}
+		}
+	}
+
+	.bottom {
+		width: 100%;
+		text-align: right;
+		color: var(--black);
+		padding: 0 40px 5px 0;
+
+		a {
+			color: var(--green-third);
+		}
+	}
+
+	a {
+		transition: all 0.3s ease;
+	}
+
+	a:hover {
+		color: var(--green-third);
+	}
+}

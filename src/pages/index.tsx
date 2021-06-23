@@ -8,7 +8,7 @@ export default function Home() {
 			<section className={[styles.hero, styles.tnatu].join(' ')}>
 				<div className={styles.sub_container}>
 					<div className={styles.title}>
-						<h2 className={styles.title_heading}>T[natu]</h2>
+						<h2 className={styles.title_heading}>T-natu</h2>
 						<h3 className={styles.title_sub_heading}>
 							O futuro do mundo sustentável está aqui.
 						</h3>
@@ -20,18 +20,13 @@ export default function Home() {
 								Saiba mais
 							</a>
 						</Link>
-						<Link href='/shop/tnatu'>
-							<a href='' className={styles.cta_link}>
-								Comprar
-							</a>
-						</Link>
 					</div>
 				</div>
 			</section>
 			<section className={[styles.hero, styles.enatu].join(' ')}>
 				<div className={styles.sub_container}>
 					<div className={[styles.title].join(' ')}>
-						<h2 className={styles.title_heading}>E[natu]</h2>
+						<h2 className={styles.title_heading}>E-natu</h2>
 						<h3
 							className={[styles.title_sub_heading, styles.title_dark].join(
 								' '
@@ -52,14 +47,6 @@ export default function Home() {
 								Saiba mais
 							</a>
 						</Link>
-						<Link href='/shop/enatu'>
-							<a
-								href=''
-								className={[styles.cta_link, styles.cta_link_darker].join(' ')}
-							>
-								Comprar
-							</a>
-						</Link>
 					</div>
 				</div>
 			</section>
@@ -67,7 +54,7 @@ export default function Home() {
 			<section className={[styles.hero, styles.natureza].join(' ')}>
 				<div className={styles.sub_container}>
 					<div className={[styles.title].join(' ')}>
-						<h2 className={styles.title_heading}>Natureza</h2>
+						<h2 className={styles.title_heading}>Nature</h2>
 					</div>
 				</div>
 			</section>

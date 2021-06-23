@@ -68,6 +68,11 @@ button {
 	cursor: pointer;
 }
 
+em {
+	color: var(--green-third);
+	font-style: normal;
+}
+
 ::selection {
 	background: rgba(30, 174, 152, 0.5); /* WebKit/Blink Browsers */
 	filter: brightness(50%);

@@ -1,4 +1,5 @@
 import styles from './styles.module.scss';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export function Header() {
@@ -72,14 +73,14 @@ export function Header() {
 						</li>
 
 						<li className={styles.nav_item}>
-							<a href='#' className={styles.nav_link}>
-								E[natu]
-							</a>
+							<Link href='/products/enatu'>
+								<a className={styles.nav_link}>E-Natu</a>
+							</Link>
 						</li>
 						<li className={styles.nav_item}>
-							<a href='#' className={styles.nav_link}>
-								T[natu]
-							</a>
+							<Link href='/products/tnatu'>
+								<a className={styles.nav_link}>T-Natu</a>
+							</Link>
 						</li>
 
 						<li className={[styles.nav_item, styles.nav_item_hidden].join(' ')}>
