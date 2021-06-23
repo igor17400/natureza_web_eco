@@ -1,5 +1,7 @@
 import styles from './styles.module.scss';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
 	return (
@@ -16,7 +18,7 @@ export function Footer() {
 					<div className={styles.lower}>
 						<div className={styles.topic}>Contate-nos</div>
 						<div className={styles.phone}>
-							<a href='#'>+55(61)99699-5651</a>
+							<a href='#'>+55 (61) 99699-5651</a>
 						</div>
 						<div className={styles.email}>
 							<a href='#'>igorlima1740@gmail.com</a>
@@ -42,20 +44,14 @@ export function Footer() {
 						<input type='text' placeholder='E-mail' />
 						<input type='submit' name='' value='Send' />
 						<div className={styles.media_icons}>
-							<a href='#'>
-								<i className='fab fa-facebook-f'></i>
+							<a href='https://www.instagram.com/igorlima174/' target='_blank'>
+								<FontAwesomeIcon icon={faInstagram} />
 							</a>
-							<a href='#'>
-								<i className='fab fa-instagram'></i>
-							</a>
-							<a href='#'>
-								<i className='fab fa-twitter'></i>
-							</a>
-							<a href='#'>
-								<i className='fab fa-youtube'></i>
-							</a>
-							<a href='#'>
-								<i className='fab fa-linkedin-in'></i>
+							<a
+								href='https://www.youtube.com/watch?v=eIqnNXAy3Hg'
+								target='_blank'
+							>
+								<FontAwesomeIcon icon={faYoutube} />
 							</a>
 						</div>
 					</form>
